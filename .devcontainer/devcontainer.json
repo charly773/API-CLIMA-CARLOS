@@ -2,7 +2,7 @@
   "name": "Weather API",
   "build": {
     "context": "..",
-    "dockerfile": "Dockerfile"
+    "dockerfile": "../Dockerfile"
   },
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
