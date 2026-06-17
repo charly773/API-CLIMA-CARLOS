@@ -35,11 +35,21 @@ Abre: `http://localhost:8000/weather-ui`
 
 ## 📝 Variables de Entorno
 
-Crea un archivo `.env` en la raíz:
+Para ejecutar localmente, crea un archivo `.env` en la raíz:
 ```
 OPENWEATHER_API_KEY=tu_clave_aqui
 PORT=5000
 ```
+
+> Nota: no subas el archivo `.env` al repositorio. Ya está agregado a `.gitignore`.
+
+### GitHub Actions
+
+Para que el pipeline pueda ejecutar el contenedor en CI, agrega un secret en GitHub:
+- Name: `OPENWEATHER_API_KEY`
+- Value: tu clave de OpenWeather
+
+GitHub Actions usará ese secret para el job de smoke test del contenedor.
 
 ## 📚 Endpoints
 

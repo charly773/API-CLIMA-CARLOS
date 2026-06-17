@@ -1,0 +1,14 @@
+# Ignore local environment and Python artifacts
+.env
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+venv3/
+.envrc
+node_modules/
+*.log
+.DS_Store
+.git
